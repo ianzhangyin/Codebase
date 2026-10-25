@@ -17,7 +17,34 @@
   <style>
     :root{--paper:#faf9f6;--ink:#252923;--muted:#666b64;--line:#dcded8;--accent:#385b4a;--soft:#edf0e9;--serif:'Crimson Pro',Georgia,serif;--sans:'Source Sans 3',Arial,sans-serif}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;-webkit-font-smoothing:antialiased}a{color:var(--accent);text-decoration:underline;text-decoration-color:#9cac9f;text-underline-offset:3px}a:hover{text-decoration-color:var(--accent)}.wrap{width:min(900px,calc(100% - 48px));margin:auto}.masthead{padding:35px 0 23px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-end}.name{font:600 30px/1 var(--serif);letter-spacing:.01em;color:var(--ink);text-decoration:none}.affiliation{display:block;color:var(--muted);font-size:13px;margin-top:8px}.nav{display:flex;gap:22px;font-size:14px}.nav a{color:var(--ink);text-decoration:none}.nav a:hover{color:var(--accent);text-decoration:underline}.hero{display:grid;grid-template-columns:1fr 190px;gap:50px;padding:56px 0 48px;align-items:start}.hero h1{font:500 32px/1.15 var(--serif);margin:0 0 17px;letter-spacing:-.015em}.hero p{font-size:17px;line-height:1.65;color:#414740;margin:0 0 15px;max-width:620px}.portrait{width:190px;height:225px;margin:0;background:#e8e9e2;border:1px solid var(--line);position:relative;overflow:hidden}.portrait img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}.portrait figcaption{position:absolute;right:0;bottom:0;left:0;padding:18px 8px 7px;background:linear-gradient(transparent,rgba(20,22,20,.62));font:11px var(--sans);color:#fff}.portrait figcaption a{color:#fff}.links{margin-top:19px;font-size:14px;display:flex;gap:16px;flex-wrap:wrap}.section{padding:30px 0 28px;border-top:1px solid var(--line)}.section-title{font:600 25px/1.1 var(--serif);margin:0 0 18px}.section p{line-height:1.65;color:#414740;margin:0 0 12px}.research{max-width:710px}.research-topics{margin-top:17px;padding:13px 16px;background:var(--soft);font-size:14px;line-height:1.7}.research-topics strong{font-weight:600}.pub{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid #e8e9e3;line-height:1.55}.pub:last-child{border-bottom:0}.pub-year{font:500 15px var(--serif);color:var(--muted)}.pub-title{font-weight:600}.pub-meta{font-size:14px;color:var(--muted)}.pub-links{font-size:13px;margin-top:3px}.simple-list{list-style:none;padding:0;margin:0}.simple-list li{padding:7px 0;line-height:1.5}.simple-list .date{display:inline-block;width:118px;color:var(--muted);font-size:14px}.contact-row{display:flex;justify-content:space-between;gap:30px;align-items:start}.contact-row p{max-width:500px}.footer{margin-top:16px;border-top:1px solid var(--line);padding:19px 0 28px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:13px}.footer-links{display:flex;gap:16px}
-    @media(max-width:650px){.wrap{width:calc(100% - 36px)}.masthead{align-items:flex-start;gap:20px;flex-direction:column}.nav{gap:19px}.hero{grid-template-columns:1fr;gap:24px;padding:38px 0 34px}.hero h1{font-size:30px}.portrait{width:150px;height:180px;font-size:46px}.section{padding:25px 0}.section-title{font-size:23px}.contact-row{display:block}.footer{flex-direction:column}.simple-list .date{width:98px}}
+    @media(max-width:650px){
+      .wrap{width:calc(100% - 36px)}
+      .masthead{align-items:flex-start;gap:18px;flex-direction:column;padding:28px 0 20px}
+      .nav{width:100%;flex-wrap:wrap;column-gap:17px;row-gap:10px}
+      .hero{grid-template-columns:minmax(0,1fr);gap:22px;padding:34px 0 30px}
+      .hero h1{font-size:30px;line-height:1.12}
+      .hero p{font-size:16px;line-height:1.6}
+      .portrait{width:min(100%,220px);height:auto;aspect-ratio:4/5}
+      .section{padding:24px 0 22px}
+      .section-title{font-size:23px}
+      .pub{grid-template-columns:44px minmax(0,1fr);gap:10px}
+      .pub-title,.pub-meta{overflow-wrap:anywhere}
+      .simple-list li{line-height:1.55}
+      .simple-list .date{display:block;width:auto;margin:0 0 2px}
+      .research-topics{padding:12px}
+      .contact-row{display:block}
+      .footer{flex-direction:column;gap:12px}
+      .footer-links{flex-wrap:wrap;gap:12px}
+      .links{gap:12px}
+    }
+    @media(max-width:380px){
+      .wrap{width:calc(100% - 32px)}
+      .name{font-size:28px}
+      .nav{column-gap:14px}
+      .hero h1{font-size:28px}
+      .pub{grid-template-columns:minmax(0,1fr);gap:2px}
+      .pub-year{font-size:13px}
+    }
   </style>
 </head>
 <body>
