@@ -25,3 +25,10 @@
 .consult-scene .pet-trio img{position:static;left:auto;bottom:auto;transform:none;width:100%;height:145px;max-width:none;max-height:145px;object-fit:contain;align-self:end}
 @media(max-width:850px){.pet-trio{height:145px;gap:10px;padding:0 14px}.consult-scene .pet-trio img{height:128px;max-height:128px}}
 @media(max-width:520px){.pet-trio{height:130px;gap:4px;padding:0 12px}.consult-scene .pet-trio img{height:112px;max-height:112px}}
+/* Same three side-by-side mascots on the homepage. */
+.hero-art .home-pet-trio{position:absolute;z-index:1;left:50%;bottom:0;transform:translateX(-50%);width:100%;height:245px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:0 12px;align-items:end;justify-items:center;pointer-events:none}
+.hero-art .home-pet-trio img{position:static;left:auto;bottom:auto;transform:none;width:100%;height:205px;max-width:none;max-height:none;object-fit:contain;filter:drop-shadow(0 12px 15px #675ba322)}
+.hero-art .home-pet-trio .pet-mascot{transform:translateY(1px) scale(1.04)}
+.hero-art .card-top{top:28px;left:10px}.hero-art .card-bottom{top:28px;bottom:auto;right:0}
+@media(max-width:760px){.hero-art .home-pet-trio{height:205px;padding:0 8px}.hero-art .home-pet-trio img{height:170px}.hero-art .card-top,.hero-art .card-bottom{top:18px}.hero-art .floating-card{padding:10px 11px}}
+@media(max-width:390px){.hero-art .home-pet-trio{height:180px;padding:0 5px;gap:2px}.hero-art .home-pet-trio img{height:148px}.hero-art .floating-card{padding:9px}.hero-art .card-top{left:0}.hero-art .card-bottom{right:0}}
