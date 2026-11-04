@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8ff">
+  <meta name="description" content="联系猫猫云，提交多云资源选型、采购协助与技术交付需求。">
+  <title>咨询方案 — 猫猫云</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="consult-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="猫猫云首页"><span class="brand-mark" aria-hidden="true">☁</span><span>猫猫云</span></a>
+    <a class="back-home" href="index.html">← 返回首页</a>
+  </header>
+  <main class="consult-main">
+    <section class="consult-intro">
+      <span class="eyebrow">Talk to our cloud team</span>
+      <h1>告诉我们你的<br><span>云上计划。</span></h1>
+      <p>留下方便联系的方式和大致需求，猫猫云团队会据此跟进。提交时会打开你的默认邮件应用，供你确认后发送。</p>
+      <div class="consult-points"><span>✓ 按需求梳理平台与资源</span><span>✓ 采购及授权范围先确认</span><span>✓ 交付内容以书面方案为准</span></div>
+    </section>
+
+    <form id="consult-form" class="consult-form">
+      <div class="form-heading"><div><span class="eyebrow">Consultation form</span><h2>咨询信息</h2></div><span class="required-note">* 必填</span></div>
+      <div class="form-grid">
+        <label class="field"><span>姓名 <em>*</em></span><input name="name" autocomplete="name" required maxlength="80" placeholder="怎么称呼你"></label>
+        <label class="field"><span>公司 / 团队</span><input name="company" autocomplete="organization" maxlength="120" placeholder="选填"></label>
+        <label class="field"><span>工作邮箱 <em>*</em></span><input type="email" name="email" autocomplete="email" required maxlength="160" placeholder="name@company.com"></label>
+        <label class="field"><span>联系电话</span><input type="tel" name="phone" autocomplete="tel" maxlength="40" placeholder="选填，含国家或地区代码"></label>
+      </div>
+      <fieldset class="field provider-field"><legend>感兴趣的云平台 <em>*</em></legend><div class="check-grid">
+        <label><input type="checkbox" name="providers" value="阿里云"><span>阿里云</span></label>
+        <label><input type="checkbox" name="providers" value="AWS"><span>Amazon Web Services</span></label>
+        <label><input type="checkbox" name="providers" value="Google Cloud"><span>Google Cloud</span></label>
+        <label><input type="checkbox" name="providers" value="Microsoft Azure"><span>Microsoft Azure</span></label>
+        <label><input type="checkbox" name="providers" value="其他 / 尚未确定"><span>其他 / 尚未确定</span></label>
+      </div></fieldset>
+      <label class="field"><span>希望我们协助什么？ <em>*</em></span><textarea name="requirements" required rows="5" maxlength="3000" placeholder="例如：计划部署的地区、业务类型、预计资源规模或当前遇到的问题"></textarea></label>
+      <fieldset class="field contact-preference"><legend>优先联系方法</legend><div class="radio-row"><label><input type="radio" name="preference" value="邮箱" checked><span>邮箱</span></label><label><input type="radio" name="preference" value="电话"><span>电话</span></label></div></fieldset>
+      <label class="consent"><input type="checkbox" name="consent" required><span>我同意猫猫云使用以上信息回复本次咨询。信息将通过邮件草稿发送给猫猫云客服邮箱；点击最终发送前，你可以检查并修改内容。</span></label>
+      <button class="button button-primary submit-button" type="submit">打开邮件并提交 <span aria-hidden="true">→</span></button>
+      <p class="form-note">提交按钮会打开默认邮件应用，不会在本网页自动发送。云厂商授权、采购方式和服务范围以实际合同确认为准。</p>
+    </form>
+  </main>
+  <footer class="site-footer consult-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">☁</span><span>猫猫云</span></a><span>© <span id="year"></span> 猫猫云</span><a href="index.html">返回首页</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
