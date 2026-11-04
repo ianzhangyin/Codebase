@@ -18,3 +18,5 @@
 .consult-scene .pet-pallas,.consult-scene .pet-chow{width:29%;max-width:124px;max-height:135px}.consult-scene .pet-mascot{width:37%;max-width:148px;max-height:164px}
 @media(max-width:850px){.consult-scene .pet-pallas,.consult-scene .pet-chow{max-height:124px}.consult-scene .pet-mascot{max-height:150px}}
 @media(max-width:520px){.consult-scene .pet-pallas,.consult-scene .pet-chow{max-height:112px}.consult-scene .pet-mascot{max-height:132px}}
+.chip-three{left:50%;top:12px;bottom:auto;transform:translateX(-50%)}
+@media(max-width:520px){.chip-three{left:50%;top:12px;bottom:auto;transform:translateX(-50%)}}
