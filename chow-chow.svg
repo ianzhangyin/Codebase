@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title">
+<title id="title">可爱的松狮犬</title>
+<defs><linearGradient id="fur" x2="0.2" y2="1"><stop stop-color="#f4c276"/><stop offset="1" stop-color="#d98b42"/></linearGradient><radialGradient id="face"><stop stop-color="#f7d69d"/><stop offset="1" stop-color="#e6aa5c"/></radialGradient></defs>
+<ellipse cx="90" cy="162" rx="53" ry="8" fill="#714827" opacity=".12"/>
+<!-- fluffy body and round mane -->
+<path d="M42 107c-8-17-7-38 2-55l-9-8 15 1c10-15 25-24 42-24s32 9 42 24l15-1-9 8c9 17 10 38 2 55 5 17 0 38-16 48-19 12-66 12-85 0-16-10-21-31-16-48Z" fill="url(#fur)" stroke="#bd763b" stroke-width="2" stroke-linejoin="round"/>
+<!-- ears -->
+<path d="m51 55 1-28c1-10 10-14 17-6l15 25m29 0 15-25c7-8 16-4 17 6l1 28" fill="#ce8140" stroke="#a96536" stroke-width="3" stroke-linejoin="round"/><path d="m58 47 1-17 14 17m49 0 14-17 1 17" fill="#d99191"/>
+<!-- fluffy cheek ruff -->
+<path d="M39 88c-12 3-18 13-15 24l12-5-4 14 14-8m110-25c12 3 18 13 15 24l-12-5 4 14-14-8" fill="#f3c77e" stroke="#bd763b" stroke-width="2" stroke-linejoin="round"/>
+<!-- face mask -->
+<ellipse cx="90" cy="93" rx="42" ry="39" fill="url(#face)"/>
+<!-- brows and eyes -->
+<path d="M61 78c6-5 13-6 20-2m18 0c7-4 14-3 20 2" fill="none" stroke="#a75e35" stroke-width="4" stroke-linecap="round"/><ellipse cx="72" cy="89" rx="5" ry="6" fill="#382e2a"/><ellipse cx="108" cy="89" rx="5" ry="6" fill="#382e2a"/><circle cx="73.5" cy="87" r="1.7" fill="#fff"/><circle cx="109.5" cy="87" r="1.7" fill="#fff"/>
+<ellipse cx="58" cy="103" rx="13" ry="8" fill="#eda7a4" opacity=".72"/><ellipse cx="122" cy="103" rx="13" ry="8" fill="#eda7a4" opacity=".72"/>
+<!-- muzzle and smile -->
+<ellipse cx="90" cy="104" rx="14" ry="11" fill="#f8e5ca"/><path d="m85 101 5-4 5 4-5 4Z" fill="#59403c"/><path d="M90 105c-1 5-5 7-9 5m9-5c1 5 5 7 9 5" fill="none" stroke="#59403c" stroke-width="2" stroke-linecap="round"/>
+<!-- blue tongue and collar -->
+<path d="M84 111c2 0 4 1 6 1s4-1 6-1v8c0 5-12 5-12 0Z" fill="#6558b8"/>
+<path d="M54 128c20 11 52 11 72 0l8 13c-24 17-64 17-88 0Z" fill="#8e7be7" stroke="#7564ca" stroke-width="2"/><circle cx="90" cy="142" r="5" fill="#ffe5a1" stroke="#b69a56" stroke-width="1.5"/>
+<!-- paws -->
+<path d="M54 146c1-10 13-14 23-9l9 11c0 9-13 13-24 10-6-2-9-7-8-12Zm72 0c-1-10-13-14-23-9l-9 11c0 9 13 13 24 10 6-2 9-7 8-12Z" fill="#f6cd8d" stroke="#bd763b" stroke-width="2"/>
+</svg>

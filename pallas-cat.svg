@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title">
+<title id="title">可爱的兔狲</title>
+<defs><linearGradient id="p" x2="0.2" y2="1"><stop stop-color="#b9a995"/><stop offset="1" stop-color="#887a69"/></linearGradient><radialGradient id="m"><stop stop-color="#f8eee0"/><stop offset="1" stop-color="#ddcbb3"/></radialGradient></defs>
+<ellipse cx="90" cy="161" rx="53" ry="8" fill="#51463b" opacity=".12"/>
+<!-- fluffy round body/head -->
+<path d="M35 102 25 91l13-4-8-13 16 2c4-22 21-38 44-38s40 16 44 38l16-2-8 13 13 4-10 12c7 20-2 45-20 55-17 9-54 9-71 0-18-10-27-35-19-56Z" fill="url(#p)" stroke="#786b5d" stroke-width="2" stroke-linejoin="round"/>
+<!-- ears -->
+<path d="m49 59-3-25 24 15m39 0 24-15-3 25" fill="#a99882" stroke="#786b5d" stroke-width="3" stroke-linejoin="round"/><path d="m54 50-1-8 9 6m56 0 9-6-1 8" fill="#d7aeb1"/>
+<!-- cheek tufts -->
+<path d="M39 95c-9 5-13 12-12 20l13-4-4 12 15-8m90-20c9 5 13 12 12 20l-13-4 4 12-15-8" fill="#c4b39d" stroke="#786b5d" stroke-width="2" stroke-linejoin="round"/>
+<!-- facial markings -->
+<path d="M57 77c9-8 18-10 28-9m10 0c10-1 19 1 28 9" fill="none" stroke="#716456" stroke-width="6" stroke-linecap="round"/><path d="m86 71-3 13m11-13 3 13" stroke="#eadbc5" stroke-width="3" stroke-linecap="round"/>
+<!-- eyes -->
+<ellipse cx="68" cy="99" rx="8" ry="10" fill="#d7a94c"/><ellipse cx="112" cy="99" rx="8" ry="10" fill="#d7a94c"/><ellipse cx="68" cy="100" rx="2.4" ry="7" fill="#302c28"/><ellipse cx="112" cy="100" rx="2.4" ry="7" fill="#302c28"/><circle cx="70" cy="96" r="2" fill="#fff"/><circle cx="114" cy="96" r="2" fill="#fff"/>
+<ellipse cx="54" cy="112" rx="17" ry="10" fill="#dcaeb0" opacity=".7"/><ellipse cx="126" cy="112" rx="17" ry="10" fill="#dcaeb0" opacity=".7"/>
+<path d="m84 113 6-5 6 5-6 5Z" fill="#684f4c"/><path d="M90 118c-1 6-6 8-11 6m11-6c1 6 6 8 11 6" fill="none" stroke="#51433e" stroke-width="2" stroke-linecap="round"/>
+<path d="m54 116-18-2m18 8-18 3m90-9 18-2m-18 8 18 3" fill="none" stroke="#695d50" stroke-width="1.5" stroke-linecap="round"/>
+<!-- tiny paws -->
+<path d="M54 146c5-12 19-14 28-6l8 11c-1 10-17 13-29 9-8-3-11-8-7-14Zm72 0c-5-12-19-14-28-6l-8 11c1 10 17 13 29 9 8-3 11-8 7-14Z" fill="#c8b69e" stroke="#786b5d" stroke-width="2"/>
+</svg>
