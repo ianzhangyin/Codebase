@@ -20,3 +20,8 @@
 @media(max-width:520px){.consult-scene .pet-pallas,.consult-scene .pet-chow{max-height:112px}.consult-scene .pet-mascot{max-height:132px}}
 .chip-three{left:50%;top:12px;bottom:auto;transform:translateX(-50%)}
 @media(max-width:520px){.chip-three{left:50%;top:12px;bottom:auto;transform:translateX(-50%)}}
+/* Keep the three mascots in separate, evenly sized columns. */
+.pet-trio{left:0;bottom:0;transform:none;width:100%;height:160px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:0 20px;align-items:end;justify-items:center}
+.consult-scene .pet-trio img{position:static;left:auto;bottom:auto;transform:none;width:100%;height:145px;max-width:none;max-height:145px;object-fit:contain;align-self:end}
+@media(max-width:850px){.pet-trio{height:145px;gap:10px;padding:0 14px}.consult-scene .pet-trio img{height:128px;max-height:128px}}
+@media(max-width:520px){.pet-trio{height:130px;gap:4px;padding:0 12px}.consult-scene .pet-trio img{height:112px;max-height:112px}}
