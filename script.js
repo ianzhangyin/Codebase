@@ -235,4 +235,25 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 3000);
     }
   });
+
+  // ─── 11. Mobile User-Agent check for promotional ad banner ──────────
+  const jackpotBannerSection = document.querySelector('.jackpot-ad-section');
+
+  if (jackpotBannerSection) {
+    const isMobileUserAgent = () => {
+      if (navigator.userAgentData && typeof navigator.userAgentData.mobile === 'boolean') {
+        return navigator.userAgentData.mobile;
+      }
+      const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|Tablet/i.test(ua);
+    };
+
+    if (isMobileUserAgent()) {
+      jackpotBannerSection.hidden = false;
+      jackpotBannerSection.classList.add('is-mobile-agent');
+    } else {
+      jackpotBannerSection.hidden = true;
+      jackpotBannerSection.classList.remove('is-mobile-agent');
+    }
+  }
 });

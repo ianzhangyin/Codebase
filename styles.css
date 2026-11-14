@@ -1461,7 +1461,12 @@ button {
    SLOT & JACKPOT PROMOTIONAL AD BANNER (.jackpot-ad-section)
    ============================================================ */
 .jackpot-ad-section {
+  display: none;
   padding: 28px 0 4px;
+}
+
+.jackpot-ad-section.is-mobile-agent {
+  display: block;
 }
 
 .jackpot-ad-banner {
