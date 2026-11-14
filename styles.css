@@ -627,9 +627,9 @@ button {
   border-color: transparent;
 }
 
-/* Colored placeholder area */
+/* Destination snapshot container & fallback gradient placeholders */
 .dest-image {
-  height: 180px;
+  height: 190px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -638,7 +638,19 @@ button {
   overflow: hidden;
 }
 
-/* Different bg colors for each destination */
+.dest-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.destination-card:hover .dest-image img {
+  transform: scale(1.06);
+}
+
+/* Different bg colors for each destination (loading fallbacks) */
 .dest-image.bali         { background: linear-gradient(135deg, #FF9A56, #FF6913); }
 .dest-image.jakarta      { background: linear-gradient(135deg, #667eea, #764ba2); }
 .dest-image.yogyakarta   { background: linear-gradient(135deg, #f093fb, #f5576c); }
