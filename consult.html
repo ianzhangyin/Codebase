@@ -1,60 +1,197 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="id">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f8ff">
-  <meta name="description" content="联系猫猫云，提交多云资源选型、采购协助与技术交付需求。">
-  <title>咨询方案 — 猫猫云</title>
+  <meta name="theme-color" content="#0067FF">
+  <meta name="description" content="Hubungi TravelKu — Pusat bantuan pelanggan 24/7 untuk bantuan pemesanan tiket penerbangan, hotel, kereta api, pembatalan dan pengembalian dana.">
+  <title>Hubungi Kami — TravelKu Indonesia</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="consult-page">
+<body>
+  <!-- Header -->
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="猫猫云首页"><span class="brand-mark" aria-hidden="true">☁</span><span>猫猫云</span></a>
-    <a class="back-home" href="index.html">← 返回首页</a>
-  </header>
-  <main class="consult-main">
-    <section class="consult-intro">
-      <span class="eyebrow">Talk to our cloud team</span>
-      <h1>告诉我们你的<br><span>云上计划。</span></h1>
-      <p>留下方便联系的方式和大致需求，猫猫云团队会据此跟进。提交时会打开你的默认邮件应用，供你确认后发送。</p>
-      <div class="consult-scene" aria-label="猫猫云猫咪与多云平台插画">
-        <div class="scene-glow"></div>
-        <div class="pet-trio">
-          <img class="pet pet-pallas" src="pallas-cat.svg" alt="可爱的兔狲">
-          <img class="pet pet-mascot" src="cat.svg" alt="戴紫色围巾的猫猫云吉祥物">
-          <img class="pet pet-chow" src="chow-chow.svg" alt="可爱的松狮犬">
-        </div>
-        <span class="scene-chip chip-one"><i class="chip-dot orange"></i>阿里云</span>
-        <span class="scene-chip chip-two"><i class="chip-dot blue"></i>AWS</span>
-        <span class="scene-chip chip-three"><i class="chip-dot green"></i>Google Cloud</span>
-      </div>
-      <div class="consult-points"><span><b>01</b> 按需求梳理平台与资源</span><span><b>02</b> 采购及授权范围先确认</span><span><b>03</b> 交付内容以书面方案为准</span></div>
-    </section>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="TravelKu Beranda">
+        <span class="brand-icon" aria-hidden="true">✈</span>
+        Travel<span>Ku</span>
+      </a>
 
-    <form id="consult-form" class="consult-form">
-      <div class="form-heading"><div><span class="eyebrow">Consultation form</span><h2>咨询信息</h2></div><span class="required-note">* 必填</span></div>
-      <div class="form-grid">
-        <label class="field"><span>姓名 <em>*</em></span><input name="name" autocomplete="name" required maxlength="80" placeholder="怎么称呼你"></label>
-        <label class="field"><span>公司 / 团队</span><input name="company" autocomplete="organization" maxlength="120" placeholder="选填"></label>
-        <label class="field"><span>工作邮箱 <em>*</em></span><input type="email" name="email" autocomplete="email" required maxlength="160" placeholder="name@company.com"></label>
-        <label class="field"><span>联系电话</span><input type="tel" name="phone" autocomplete="tel" maxlength="40" placeholder="选填，含国家或地区代码"></label>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="nav" aria-label="Navigasi utama">
+        <a href="index.html#penerbangan" class="nav-link">Penerbangan</a>
+        <a href="index.html#hotel" class="nav-link">Hotel</a>
+        <a href="index.html#kereta" class="nav-link">Kereta Api</a>
+        <a href="index.html#atraksi" class="nav-link">Atraksi</a>
+        <a href="index.html#penawaran" class="nav-link">Paket Wisata</a>
+        <a href="consult.html" class="nav-link" style="color:var(--color-primary); font-weight:700;">Pusat Bantuan</a>
+        <div class="auth-buttons">
+          <button type="button" class="btn-login">Masuk</button>
+          <button type="button" class="btn-register">Daftar</button>
+        </div>
+      </nav>
+
+      <div class="auth-buttons">
+        <button type="button" class="btn-login">Masuk</button>
+        <button type="button" class="btn-register">Daftar</button>
       </div>
-      <fieldset class="field provider-field"><legend>感兴趣的云平台 <em>*</em></legend><div class="check-grid">
-        <label><input type="checkbox" name="providers" value="阿里云"><span>阿里云</span></label>
-        <label><input type="checkbox" name="providers" value="AWS"><span>Amazon Web Services</span></label>
-        <label><input type="checkbox" name="providers" value="Google Cloud"><span>Google Cloud</span></label>
-        <label><input type="checkbox" name="providers" value="Microsoft Azure"><span>Microsoft Azure</span></label>
-        <label><input type="checkbox" name="providers" value="其他 / 尚未确定"><span>其他 / 尚未确定</span></label>
-      </div></fieldset>
-      <label class="field"><span>希望我们协助什么？ <em>*</em></span><textarea name="requirements" required rows="5" maxlength="3000" placeholder="例如：计划部署的地区、业务类型、预计资源规模或当前遇到的问题"></textarea></label>
-      <fieldset class="field contact-preference"><legend>优先联系方法</legend><div class="radio-row"><label><input type="radio" name="preference" value="邮箱" checked><span>邮箱</span></label><label><input type="radio" name="preference" value="电话"><span>电话</span></label></div></fieldset>
-      <label class="consent"><input type="checkbox" name="consent" required><span>我同意猫猫云使用以上信息回复本次咨询。信息将通过邮件草稿发送给猫猫云客服邮箱；点击最终发送前，你可以检查并修改内容。</span></label>
-      <button class="button button-primary submit-button" type="submit">打开邮件并提交 <span aria-hidden="true">→</span></button>
-      <p class="form-note">提交按钮会打开默认邮件应用，不会在本网页自动发送。云厂商授权、采购方式和服务范围以实际合同确认为准。</p>
-    </form>
+    </div>
+  </header>
+
+  <!-- Main Contact Section -->
+  <main class="contact-page">
+    <div class="container">
+      <div class="section-heading" style="text-align:left; margin-bottom: 32px;">
+        <span class="eyebrow">Layanan Pelanggan 24/7</span>
+        <h1>Hubungi Kami</h1>
+        <p style="margin: 0;">Ada kendala dengan tiket atau rencana liburan Anda? Tim customer service profesional TravelKu siap sedia membantu 24 jam sehari.</p>
+      </div>
+
+      <div class="contact-main">
+        <!-- Contact Form -->
+        <form id="contact-form" class="contact-form">
+          <h2>Kirim Pesan Bantuan</h2>
+
+          <div class="form-group">
+            <label for="contact-name">Nama Lengkap *</label>
+            <input type="text" id="contact-name" name="nama" required placeholder="Masukkan nama lengkap Anda" autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Alamat Email *</label>
+            <input type="email" id="contact-email" name="email" required placeholder="contoh@domain.com" autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-phone">Nomor Telepon / WhatsApp</label>
+            <input type="tel" id="contact-phone" name="telepon" placeholder="+62 812-XXXX-XXXX" autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-category">Kategori Pertanyaan *</label>
+            <select id="contact-category" name="subjek" required>
+              <option value="" disabled selected>Pilih kategori kendala...</option>
+              <option value="pemesanan">Bantuan Pemesanan Tiket / Voucher</option>
+              <option value="pembatalan">Permohonan Pembatalan Tiket</option>
+              <option value="pengembalian-dana">Pengembalian Dana (Refund)</option>
+              <option value="reschedule">Perubahan Jadwal (Reschedule)</option>
+              <option value="kendala-pembayaran">Kendala Pembayaran / Konfirmasi</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Detail Pesan / Pertanyaan *</label>
+            <textarea id="contact-message" name="pesan" required rows="6" placeholder="Tuliskan nomor pesanan (jika ada) dan jelaskan kendala Anda secara rinci..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Kirim Pesan Sekarang</button>
+        </form>
+
+        <!-- Sidebar Info -->
+        <aside class="contact-info" aria-label="Informasi kontak langsung">
+          <h3>Pusat Bantuan Cepat</h3>
+
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">📞</div>
+            <div>
+              <h4>Hotline Bebas Pulsa (24 Jam)</h4>
+              <p><a href="tel:+622150888999">+62-21-5088-8999</a></p>
+              <p style="font-size: 12px; color: var(--color-muted); margin-top: 2px;">Dukungan panggilan langsung untuk keadaan darurat perjalanan</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">💬</div>
+            <div>
+              <h4>WhatsApp Official Support</h4>
+              <p><a href="tel:+628118999999">+62-811-8999-999</a></p>
+              <p style="font-size: 12px; color: var(--color-muted); margin-top: 2px;">Respon rata-rata kurang dari 5 menit</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">✉️</div>
+            <div>
+              <h4>Email Dukungan</h4>
+              <p><a href="mailto:bantuan@travelku.id">bantuan@travelku.id</a></p>
+              <p><a href="mailto:refund@travelku.id">refund@travelku.id</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">🏢</div>
+            <div>
+              <h4>Kantor Operasional</h4>
+              <p>TravelKu Tower Lantai 18, Kawasan SCBD Lot 11, Jl. Jenderal Sudirman Kav. 52-53, Jakarta Selatan 12190, Indonesia</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">⏱️</div>
+            <div>
+              <h4>Jam Layanan Pelanggan</h4>
+              <p>24 Jam Setiap Hari (Senin – Minggu, termasuk hari libur nasional)</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
   </main>
-  <footer class="site-footer consult-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">☁</span><span>猫猫云</span></a><span>© <span id="year"></span> 猫猫云</span><a href="index.html">返回首页</a></footer>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="brand" href="index.html" style="color:#ffffff; margin-bottom:16px;">
+            <span style="color:#ffffff;">✈</span> Travel<span style="color:var(--color-secondary);">Ku</span>
+          </a>
+          <p>TravelKu adalah platform e-commerce reservasi perjalanan terdepan di Indonesia, menyediakan pemesanan tiket pesawat, hotel, kereta api, dan atraksi wisata dalam satu aplikasi mudah dan terpercaya.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tentang Kami</h4>
+          <ul>
+            <li><a href="index.html">Tentang TravelKu</a></li>
+            <li><a href="#">Karir &amp; Budaya</a></li>
+            <li><a href="#">Berita &amp; Siaran Pers</a></li>
+            <li><a href="#">Mitra Maskapai &amp; Hotel</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Produk Layanan</h4>
+          <ul>
+            <li><a href="index.html#penerbangan">Tiket Pesawat</a></li>
+            <li><a href="index.html#hotel">Hotel &amp; Resort</a></li>
+            <li><a href="index.html#kereta">Tiket Kereta Api</a></li>
+            <li><a href="index.html#atraksi">Atraksi Wisata</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pusat Bantuan</h4>
+          <ul>
+            <li><a href="consult.html">Hubungi Layanan Pelanggan</a></li>
+            <li><a href="consult.html">Kebijakan Pembatalan &amp; Refund</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Syarat &amp; Ketentuan Layanan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> TravelKu Indonesia. Hak Cipta Dilindungi Undang-Undang.</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
